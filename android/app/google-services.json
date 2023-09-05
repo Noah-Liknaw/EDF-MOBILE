@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "943808137088",
+    "project_id": "edfmobile-dff21",
+    "storage_bucket": "edfmobile-dff21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943808137088:android:53d777367b74919bb26365",
+        "android_client_info": {
+          "package_name": "com.example.edf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943808137088-ij22lca5notrc9e8092t09qt94m912fd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmruzGj2KfLGIRYzqBhH0RyPp3PMsWm6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943808137088-ij22lca5notrc9e8092t09qt94m912fd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
