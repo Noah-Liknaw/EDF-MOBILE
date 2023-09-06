@@ -38,7 +38,7 @@ class _ProductListState extends State<ProductList> {
         final List<Product> fetchedProducts = snapshot.docs.map((doc) {
           final Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
           return Product(data['name'], data['price'], data['picture'],
-              data['desc'], 1, data['category']);
+              data['desc'], 1, "temp");
         }).toList();
 
         setState(() {
@@ -200,7 +200,7 @@ class _ProductListState extends State<ProductList> {
               ),
             ),
             Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: EdgeInsets.all(16),
                 child: Image.asset("assets/advertisement.png"))
           ],
         ),

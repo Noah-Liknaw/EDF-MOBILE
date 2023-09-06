@@ -21,4 +21,13 @@ const List<ProductCate> catList = [
 
 String selectedCate = "Fruits";
 
-List<String> fruitCate = ["Strawberry", "Avocado", "Banna"];
+List<String> fruitCate = [
+  "Strawberry",
+  "Avocado",
+  "Banna",
+  "Kiwifruit",
+  "Grapes",
+  "Watermelon",
+  "Orange",
+  "Guava"
+];
