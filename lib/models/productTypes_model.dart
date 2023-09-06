@@ -28,34 +28,70 @@ class _ProductTypesState extends State<ProductTypes> {
           MaterialPageRoute(builder: (context) => const CatePage()),
         );
       },
-      child: Container(
-        width: 100,
-        height: 100,
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Container(
-              width: 62.85,
-              height: 58.44,
-              color: Color.fromRGBO(76, 161, 70, 1),
-            ),
-            Image.asset(widget.productCategory.imageUrl),
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Container(
+          child: Stack(children: [
             Positioned(
               bottom: 0,
-              child: Padding(
-                padding: const EdgeInsets.only(top: 25),
-                child: Text(
-                  widget.productCategory.name,
-                  style: GoogleFonts.poppins(
-                      color: Colors.black,
-                      fontSize: 11,
-                      fontWeight: FontWeight.w800),
+              child: Image.asset("assets/bg-cat-card.png"),
+            ),
+            Positioned(
+              bottom: 0,
+              child: Container(
+                child: Center(
+                  child: Text(
+                    widget.productCategory.name,
+                    style: TextStyle(
+                        fontFamily: "Montserrat",
+                        fontWeight: FontWeight.w600,
+                        fontSize: 12,
+                        color: Colors.white),
+                  ),
                 ),
+                width: 87,
+                height: 38,
+                color: Color(0xFF55AB60),
               ),
-            )
-          ],
+            ),
+            Positioned(
+              top: 0,
+              child: Image.asset(widget.productCategory.imageUrl),
+            ),
+          ]),
+          width: 87,
+          height: 125,
+          color: Colors.white,
         ),
       ),
+      // child: Container(
+      //   width: 100,
+      //   height: 100,
+      //   child: Stack(
+      //     alignment: Alignment.center,
+      //     children: [
+      //       Container(
+      //         width: 62.85,
+      //         height: 58.44,
+      //         color: Color.fromRGBO(76, 161, 70, 1),
+      //       ),
+      //       Image.asset(widget.productCategory.imageUrl),
+      //       Positioned(
+      //         bottom: 0,
+      //         child: Padding(
+      //           padding: const EdgeInsets.only(top: 25),
+      //           child: Text(
+      //             widget.productCategory.name,
+      //             style: GoogleFonts.poppins(
+      //                 color: Colors.black,
+      //                 fontSize: 11,
+      //                 fontWeight: FontWeight.w800),
+      //           ),
+      //         ),
+      //       )
+      //     ],
+      //   ),
+      // ),
     );
   }
 }
