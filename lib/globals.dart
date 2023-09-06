@@ -8,7 +8,8 @@ final myGlobalVariableProvider = Provider<String>((ref) {
 });
 
 String userNameGlobal = "AbebeBeso";
-Product selectedProduct = Product("name", "price", "imageUrl", "desc", 1);
+Product selectedProduct =
+    Product("name", "price", "imageUrl", "desc", 1, "Fruits");
 
 List<Product> cart = [];
 double totalPrice = 0;
@@ -18,4 +19,6 @@ const List<ProductCate> catList = [
       name: "Groecries", imageUrl: "category-images/Groecries.png"),
 ];
 
-String selectedCate = "";
+String selectedCate = "Fruits";
+
+List<String> fruitCate = ["Strawberry", "Avocado", "Banna"];

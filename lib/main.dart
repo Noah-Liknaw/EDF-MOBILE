@@ -1,3 +1,4 @@
+import 'package:edf/Pages/catePage.dart';
 import 'package:edf/Pages/editProfile.dart';
 import 'package:edf/data/product_data.dart';
 import 'package:edf/firebase_options.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const GetMaterialApp(
-      home: ProductList(),
+      home: CatePage(),
     );
   }
 }

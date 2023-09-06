@@ -37,8 +37,8 @@ class _ProductListState extends State<ProductList> {
       if (snapshot.docs.isNotEmpty) {
         final List<Product> fetchedProducts = snapshot.docs.map((doc) {
           final Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
-          return Product(
-              data['name'], data['price'], data['picture'], data['desc'], 1);
+          return Product(data['name'], data['price'], data['picture'],
+              data['desc'], 1, data['category']);
         }).toList();
 
         setState(() {

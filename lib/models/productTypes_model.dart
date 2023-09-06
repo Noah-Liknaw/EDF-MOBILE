@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:edf/Pages/catePage.dart';
+import 'package:edf/globals.dart';
 import 'package:edf/models/productCategory.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -21,6 +22,7 @@ class _ProductTypesState extends State<ProductTypes> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        selectedCate = widget.productCategory.name;
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const CatePage()),
